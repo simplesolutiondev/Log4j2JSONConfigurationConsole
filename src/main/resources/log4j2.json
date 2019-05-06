@@ -1,0 +1,23 @@
+{
+  "configuration": {
+    "status": "error",
+    "name": "ConsoleExample",
+    "packages": "simplesolution.dev",
+    "appenders": {
+      "Console": {
+        "name": "STDOUT",
+        "PatternLayout": {
+          "pattern": "%d - %t - %p - %c - %m%n"
+        }
+      }
+    },
+    "loggers": {
+      "root": {
+        "level": "trace",
+        "AppenderRef": {
+          "ref": "STDOUT"
+        }
+      }
+    }
+  }
+}
